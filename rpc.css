@@ -13,6 +13,7 @@ body{
 
 
 .choice{
+    outline: none;
     display: inline-block;
     background-color: hsla(0, 0%, 0%, 0.632);
     border-radius: 50%;
@@ -20,13 +21,22 @@ body{
     margin: 10px;
     margin-bottom: 30px;
     cursor: pointer;
+    border: none;
 }
 .choice:hover{
+    outline: none;
     background-color: hsla(0, 0%, 0%, 0.532);
+    border: none;
 }
 .choice:active{
+    border: none;
+    outline: none;
     background-color: hsla(0, 0%, 0%, 0.432);
     box-shadow: 1px 1px 15px hsla(0, 0%, 0%, 0.205), -1px -1px 15px hsla(0, 0%, 0%, 0.205);
+}
+.choice:focus{
+    outline: none;
+    border: none;
 }
 
 .comment{
