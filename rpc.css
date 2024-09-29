@@ -1,3 +1,7 @@
+body{
+    background-color: whitesmoke;
+}
+
 #container{
     display: flex;
     flex-direction: column;
@@ -22,6 +26,7 @@
 }
 .choice:active{
     background-color: hsla(0, 0%, 0%, 0.432);
+    box-shadow: 1px 1px 15px hsla(0, 0%, 0%, 0.205), -1px -1px 15px hsla(0, 0%, 0%, 0.205);
 }
 
 .comment{
@@ -83,5 +88,6 @@
     .choice{
         margin: 5px;
         font-size: 80px;
+        margin-bottom: 50px;
     }
 }
