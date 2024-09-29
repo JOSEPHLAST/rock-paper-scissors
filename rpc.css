@@ -1,0 +1,81 @@
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: auto;
+    font-family: monospace;
+}
+
+
+.choice{
+    display: inline-block;
+    background-color: hsla(0, 0%, 0%, 0.632);
+    border-radius: 50%;
+    font-size: 100px;
+    margin: 10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.choice:hover{
+    background-color: hsla(0, 0%, 0%, 0.532);
+}
+.choice:active{
+    background-color: hsla(0, 0%, 0%, 0.432);
+}
+
+.comment{
+    font-weight: bold;
+    font-size: x-large;
+    margin: 10px;
+    text-align: center;
+    font-size: 25px;
+}
+
+#result{
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 4px 4px 10px;
+    margin-top: 20px;
+    margin-bottom: none;
+}
+
+#emoji{
+    font-size: 60px;
+    margin-top: none;
+}
+
+#heading{
+    font-size: x-large;
+    grid-column: span 2;
+    text-align: center;
+    border-bottom: 2px solid hsla(0, 0%, 0%, 0.473);
+}
+
+.scores{
+    font-weight: bold;
+    font-size: 17px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr;
+    border: 2px solid hsla(0, 0%, 0%, 0.473);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.score{
+    text-align: center;
+    text-align: center;
+    padding: 10px;
+    padding-top: 2px;
+}
+
+#playerScore{
+    border-right: 2px solid hsla(0, 0%, 0%, 0.473);
+}
+
+.num{
+    font-size: xx-large;
+    margin-bottom: 0%;
+}
+
