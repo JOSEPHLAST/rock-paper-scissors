@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="rpc.css">
+</head>
+<body>
+    <div id="container">
+        <h1>ROCK-PAPER-SCISSORS</h1>
+
+        <div id="choices">
+            <div class="choice" onclick="gameProcess('👊')" id="rock">👊</div>
+            <div class="choice" onclick="gameProcess('✋')" id="paper">✋</div>
+            <div class="choice" onclick="gameProcess('✌️')" id="scissors">✌️</div>
+        </div>
+
+        <div class="scores"><span id="heading">SCORES</span>
+            <div class="score" id="playerScore">YOU <div class="num" id="playerNum">0</div></div>
+            <div class="score" id="computerScore">COMPUTER <div class="num" id="computerNum">0</div></div>
+        </div>
+
+        <div id="player" class="comment">YOU: </div>
+        <div id="computer" class="comment">COMPUTER:</div>
+        <div id="result" class="comment">IT'S A TIE!</div>
+        <div id="emoji" class="face"></div>
+
+    </div>
+
+    <script src="rpc.js" charset="UTF-8"></script>
+</body>
+</html>
