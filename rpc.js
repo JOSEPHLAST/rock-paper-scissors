@@ -19,47 +19,56 @@ function gameProcess(playerChoice){
     if (playerChoice === computerChoice){
         document.getElementById('result').textContent = "IT'S A TIE!";
         res.textContent = '';
+        new Audio('./sounds/tie.mp3').play();
     }
     else if(playerChoice === '👊' && computerChoice === '✋'){
         document.getElementById('result').textContent = 'YOU LOSE!';
         document.getElementById('emoji').textContent = '😞';
         computerScore++;
-        computerScoreDisplay.textContent = computerScore;      
+        computerScoreDisplay.textContent = computerScore;
+        new Audio('./sounds/wrong.mp3').play();      
     }
     else if(playerChoice === '👊' && computerChoice === '✌️'){
         document.getElementById('result').textContent = 'YOU WIN!';
-        document.getElementById('emoji').textContent = '🙂';
+        document.getElementById('emoji').textContent = '😁';
         playerScore++;
         playerScoreDisplay.textContent = playerScore;
+        new Audio('./sounds/tada.mp3').play();
     }
     else if(playerChoice === '✋' && computerChoice === '👊'){
         document.getElementById('result').textContent = 'YOU WIN!';
-        document.getElementById('emoji').textContent = '🙂';
+        document.getElementById('emoji').textContent = '😁';
         playerScore++;
         playerScoreDisplay.textContent = playerScore;
+        new Audio('./sounds/tada.mp3').play();
     }
     else if(playerChoice === '✋' && computerChoice === '✌️'){
         document.getElementById('result').textContent = 'YOU LOSE!';
         document.getElementById('emoji').textContent = '😞';
         computerScore++;
         computerScoreDisplay.textContent = computerScore;
+        new Audio('./sounds/wrong.mp3').play();
     }
     else if(playerChoice === '✌️' && computerChoice === '👊'){
         document.getElementById('result').textContent = 'YOU LOSE!';
         document.getElementById('emoji').textContent = '😞';
         computerScore++;
         computerScoreDisplay.textContent = computerScore;
+        new Audio('./sounds/wrong.mp3').play();
     }
     else if(playerChoice === '✌️' && computerChoice === '✋'){
         document.getElementById('result').textContent = 'YOU WIN!';
-        document.getElementById('emoji').textContent = '🙂';
+        document.getElementById('emoji').textContent = '😁';
         playerScore++;
         playerScoreDisplay.textContent = playerScore;
+        new Audio('./sounds/tada.mp3').play();
     }
     else {
         document.getElementById('result').textContent += ''; 
     }
-}
+} 
+
+
 
 
      
