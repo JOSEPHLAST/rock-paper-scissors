@@ -6,7 +6,7 @@ This is a simple **Rock-Paper-Scissors** game built using **HTML, CSS, and JavaS
 ---
 
 ## **📸 SCREENSHOT**  
-*!Rock-Paper-Scissors screenshot](rpc-screenshot.png)*  
+*[!Rock-Paper-Scissors screenshot](rpc-screenshot.png)*  
 
 ---
 
